@@ -1,4 +1,39 @@
-<h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<header>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <h1 class="d-flex align-items-center">
+          <img src="../assets/images/logo.png" width="40" height="40" alt="7TAO Logo">
+          <div class="d-none d-md-block">
+            <span class="fs-8 me-1">7TAO</span>活動訂票網
+          </div>
+        </h1>
+      </a>
+      <form class="d-flex" role="search">
+        <input class="form-control" type="search" placeholder="探索活動" aria-label="Search">
+        <button class="btn btn-primary" type="submit">
+          <i class="icofont icofont-search-1 text-secondary"></i>
+        </button>
+      </form>
+      <button class="navbar-toggler border-primary rounded-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="icofont icofont-ui-file"></i>
+              REGISTER
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="icofont icofont-ui-user"></i>
+              LOGIN
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
