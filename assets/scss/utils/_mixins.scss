@@ -1,0 +1,15 @@
+%logo-hidden {
+  text-indent: 101%;    /* 首行縮排 */
+  overflow: hidden;     /* 自動隱藏超出的文字或圖片 */
+  white-space: nowrap;  /* 希望元素在第一排上面，沒有斷行 */
+}
+
+
+@media (max-width: 767px) {
+  .logo {
+    text-indent: 101%;    /* 首行縮排 */
+    overflow: hidden;     /* 自動隱藏超出的文字或圖片 */
+    white-space: nowrap;  /* 希望元素在第一排上面，沒有斷行 */
+    // @extend %logo-hidden;
+  }
+}
