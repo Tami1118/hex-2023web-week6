@@ -1,0 +1,186 @@
+.banner {
+  &-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+    @include media-breakpoint-up(xl) {
+      height: 518px;
+    }
+  }
+}
+
+.category {
+  li {
+    aspect-ratio: 1/1;
+    max-height: 112px;
+
+    @include media-breakpoint-up(xl) {
+      max-height: 196px;
+    }
+
+    &:hover {
+      a {
+        color: $danger;
+        border: 2px solid $danger;
+      }
+
+      path {
+        fill: $danger;
+      }
+    }
+  }
+
+  a {
+    border: 2px solid $primary;
+  }
+
+  svg {
+    width: 40px;
+    height: 40px;
+
+    @include media-breakpoint-up(xl) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.active {
+  a {
+    &:hover {
+      color: $hover;
+
+      path {
+        fill: $hover;
+      }
+    }
+  }
+
+  &-img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+
+    @include media-breakpoint-up(xl) {
+      height: 255px;
+    }
+  }
+}
+
+.albums {
+  h2 {
+    transform: translate(-50%, -50%) rotate(-4deg);
+  }
+
+  li {
+    &:nth-child(2n) {
+      transform: rotate(2deg);
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-2deg);
+    }
+  }
+
+  &-img {
+    width: 100%;
+    height: 267px;
+    object-fit: cover;
+
+    @include media-breakpoint-up(xl) {
+      height: 274px;
+    }
+  }
+}
+
+.online {
+  &-img {
+    width: 100%;
+    height: 158px;
+    object-fit: cover;
+    object-position: 50% 30%;
+
+    @include media-breakpoint-up(xl) {
+      height: 317px;
+    }
+  }
+}
+
+.contact {
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: $primary;
+  }
+}
+
+.border-start-xl-0 {
+  border-width: 2px;
+  border-color: $primary;
+  border-style: solid;
+  
+  @include media-breakpoint-up(xl) {
+    border-width: 2px 2px 2px 0;
+  }
+}
+
+.swiper{
+  background-color: #000;
+}
+.swiper-wrapper {
+  transition-timing-function: linear;
+}
+.swiper-slide {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 3.2px;
+  width: auto;
+  color: #FBFF22;
+  background: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./layout/meta'); -%>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>7 TAO 活動訂票網 | 首頁</title>
+</head>
+
+<body>
+  <div class="container py-6">
+    <div class="mb-8">
+      <div class="border-bottom border-1 fs-8">Button</div>
+      <div class="row py-4">
+        <div class="col">
+          <button class="w-100 py-2 btn base-font-family bg-primary fs-5 text-white">查看活動詳情</button>
+        </div>
+        <div class="col">
+          <button class="w-100 py-2 btn base-font-family bg-primary fs-5 text-white">查看活動詳情</button>
+        </div>
+        <div class="col">
+          <button class="w-100 py-2 btn base-font-family bg-primary fs-5 text-white" disabled>查看活動詳情</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-8">
+      <div class="border-bottom border-1 fs-8">Text</div>
+    </div>
+
+    <div class="mb-8">
+      <div class="border-bottom border-1 fs-8">Components</div>
+    </div>
+
+    <div class="mb-8">
+      <div class="border-bottom border-1 fs-8">Form</div>
+      <form action="">
+        <div class="row">
+          <div class="col">
+            <p class="my-2">default</p>
+            <label for="account" class="form-lable mb-2">帳號</label>
+            <input type="text" id="account" class="form-control base-font-family" placeholder="請輸入帳號">
+          </div>
+          <div class="col">
+            <p class="my-2">active</p>
+            <label for="account" class="form-lable mb-2">帳號</label>
+            <input type="text" id="account" class="form-control base-font-family" placeholder="請輸入帳號" value="Belinda">
+          </div>
+          <!-- 補充css -->
+          <div class="col">
+            <p class="my-2">invalud</p>
+            <label for="account" class="form-lable mb-2">帳號</label>
+            <input type="text" id="account" class="form-control base-font-family" placeholder="請輸入帳號">
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="mb-8">
+      <div class="border-bottom border-1 fs-8">Table</div>
+      <table class="table align-middle">
+        <thead>
+          <tr>
+            <th>活動日期</th>
+            <th>票種</th>
+            <th>票價</th>
+            <th>購票</th>
+          </tr>
+        </thead>
+        <tbody class="">
+          <tr>
+            <th class="fw-400 base-font-family">2023/5/12</th>
+            <th class="fw-400 base-font-family">普通票</th>
+            <th class="fw-400 base-font-family">$600</th>
+            <th><button class="py-2 btn bg-primary fs-5 text-white display-font-family">立即購票</button></th>
+          </tr>
+          <tr>
+            <th class="fw-400 base-font-family">2023/5/12</th>
+            <th class="fw-400 base-font-family">改頭換面票（含大改造）</th>
+            <th class="fw-400 base-font-family">$3600</th>
+            <th><button class="py-2 btn bg-primary fs-5 text-white display-font-family">立即購票</button></th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mb-8" data-aos="fade-out">
+      <div class="border-bottom border-1 fs-8">Icon</div>
+      <ul class="d-flex gap-4 py-4">
+        <i class="icofont icofont-ui-file"></i>
+        <i class="icofont icofont-ui-user"></i>
+        <i class="icofont icofont-search-1"></i>
+        <i class="icofont icofont-ui-email"></i>
+        <i class="icofont icofont-facebook"></i>
+        <i class="icofont icofont-phone"></i>
+        <i class="icofont icofont-arrow-left"></i>
+        <i class="icofont icofont-arrow-right"></i>
+        <i class="icofont icofont-check-circled"></i>
+        <i class="icofont icofont-verification-check"></i>
+      </ul>
+    </div>
+
+    <div class="mb-8">
+      <div class="border-bottom border-1 fs-8">Image</div>
+    </div>
+  </div>
+  <script type="module" src="../main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</body>
+
+</html>

@@ -1,39 +1,66 @@
-<header>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <h1 class="d-flex align-items-center">
-          <img src="../assets/images/logo.png" width="40" height="40" alt="7TAO Logo">
-          <div class="d-none d-md-block">
-            <span class="fs-8 me-1">7TAO</span>活動訂票網
-          </div>
-        </h1>
+<header class="border-bottom border-2 position-fixed top-0 start-0 end-0 mx-auto z-3">
+  <div class="navbar navbar-expand-lg navbar-light bg-background">
+    <div class="container">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img class="header-logo" src="../assets/images/logo.png" width="40" height="40" alt="7TAO Logo">
+        <h1 class="ms-4 me-12 d-none d-lg-flex align-items-center fs-4"><span class="fs-8 me-1">7TAO</span>活動訂票網</h1>
       </a>
+
       <form class="d-flex" role="search">
-        <input class="form-control" type="search" placeholder="探索活動" aria-label="Search">
-        <button class="btn btn-primary" type="submit">
+        <input class="header-search form-control base-font-family border border-2 px-3 px-xl-6" type="search" placeholder="探索活動" aria-label="Search">
+        <button class="header-search-btn btn btn-primary border border-2 px-3 px-xl-4" type="submit">
           <i class="icofont icofont-search-1 text-secondary"></i>
         </button>
       </form>
-      <button class="navbar-toggler border-primary rounded-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+      <button class="navbar-toggler border-2 border-primary rounded-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
+            <button class="nav-link active fw-4h"  data-bs-toggle="modal" data-bs-target="#registerModal">
               <i class="icofont icofont-ui-file"></i>
-              REGISTER
-            </a>
+              <span class="ms-1">
+                REGISTER
+              </span>
+            </button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a href="login.html" class="nav-link active fw-4h">
               <i class="icofont icofont-ui-user"></i>
-              LOGIN
+              <span class="ms-1">
+                LOGIN
+              </span>
             </a>
           </li>
         </ul>
       </div>
     </div>
-  </nav>
+  </div>
 </header>
+
+<!-- 註冊 Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLebel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header position-relative">
+        <h1 class="modal-title fs-6 fw-700 position-absolute top-50 start-50 translate-middle letter-spacing-base text-nowrap" id="registerModalLebel">立刻成為 7TAO 會員</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column align-items-center py-8 py-lg-12">
+          <p class="base-font-family text-center mb-6 lh-base">
+            立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。<br>
+            您也可以先報名活動，日後再註冊帳號，<br>
+            系統會在認證您的Email後，協助您找回舊的訂單。
+          </p>
+          <a href="login.html" class="btn btn-primary text-secondary fw-5 base-font-family py-2 px-8">
+            立即成為會員
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

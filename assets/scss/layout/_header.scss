@@ -1,4 +1,37 @@
 .header{
-  background: #69F0AE;
-  font-size: 64px;
+  &-logo{
+    width: 40px;
+    height: 40px;
+
+    @include media-breakpoint-up(lg){
+      width: 53px;
+      height: 53px;
+    }
+  }
+
+  &-search{
+    width: 164px;
+    height: 39px;
+    
+    @include media-breakpoint-up(lg){
+      width: 280px;
+      height: 51px;
+    }
+  }
+
+  &-search-btn{
+    height: 39px;
+    
+    @include media-breakpoint-up(lg){
+      height: 51px;
+    }
+  }
+}
+
+.navbar-nav{
+  padding: 24px 12px 0;
+  
+  @include media-breakpoint-up(lg){
+    padding: 0;
+  }
 }

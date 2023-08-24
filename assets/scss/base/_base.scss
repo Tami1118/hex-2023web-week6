@@ -1,0 +1,40 @@
+
+body{
+  margin: 0;
+  font-family: $font-family-sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: $primary;
+  background-color: $body-bg;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+a{
+  text-decoration: none;
+  color: $primary;
+}
+
+ul,ol{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+section{
+  margin-bottom: 32px;
+  
+  @include media-breakpoint-up(xl){
+    margin-bottom: 48px;
+  }
+}
+

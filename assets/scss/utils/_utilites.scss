@@ -1,0 +1,40 @@
+
+$utilities: () !default;
+$utilities: map-merge(
+  (
+    "font-weight": (
+      property: font-weight,
+      class: fw,
+      values: (
+        lighter: $font-weight-lighter,
+        light: $font-weight-light,
+        normal: $font-weight-normal,
+        medium: $font-weight-medium,
+        semibold: $font-weight-semibold,
+        bold: $font-weight-bold,
+        bolder: $font-weight-bolder,
+        100: 100,
+        200: 200,
+        300: 300,
+        400: 400,
+        500: 500,
+        600: 600,
+        700: 700,
+        800: 800,
+        900: 900,
+      )
+    ),
+    "text-align": (
+      responsive: true,
+      property: text-align,
+      class: text,
+      values: (
+        start: left,
+        end: right,
+        center: center,
+        justify: justify,
+      )
+    ),
+  ),
+  $utilities
+);
