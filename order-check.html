@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" type="image/x-icon" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>訂單確認</title>
+  <script type="module" crossorigin src="/hex-2023web-week6/assets/main-175bfc41.js"></script>
+  <link rel="stylesheet" href="/hex-2023web-week6/assets/main-bfb516a4.css">
+</head>
+
+<body>
+  <header class="border-bottom border-2 position-fixed top-0 start-0 end-0 mx-auto z-3">
+  <div class="navbar navbar-expand-lg navbar-light bg-background">
+    <div class="container">
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <img class="header-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" width="40" height="40" alt="7TAO Logo">
+        <h1 class="ms-4 me-12 d-none d-lg-flex align-items-center fs-4"><span class="fs-8 me-1">7TAO</span>活動訂票網</h1>
+      </a>
+
+      <form class="d-flex" role="search">
+        <input class="header-search form-control base-font-family border border-2 px-3 px-xl-6" type="search" placeholder="探索活動" aria-label="Search">
+        <button class="header-search-btn btn btn-primary border border-2 px-3 px-xl-4" type="submit">
+          <i class="icofont icofont-search-1 text-secondary"></i>
+        </button>
+      </form>
+
+      <button class="navbar-toggler border-2 border-primary rounded-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <button class="nav-link active fw-4h"  data-bs-toggle="modal" data-bs-target="#registerModal">
+              <i class="icofont icofont-ui-file"></i>
+              <span class="ms-1">
+                REGISTER
+              </span>
+            </button>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link active fw-4h">
+              <i class="icofont icofont-ui-user"></i>
+              <span class="ms-1">
+                LOGIN
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- 註冊 Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLebel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header position-relative">
+        <h1 class="modal-title fs-6 fw-700 position-absolute top-50 start-50 translate-middle letter-spacing-base text-nowrap" id="registerModalLebel">立刻成為 7TAO 會員</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-column align-items-center py-8 py-lg-12">
+          <p class="base-font-family text-center mb-6 lh-base">
+            立刻成為七逃會員，加速活動報名流程並取得活動優惠資訊。<br>
+            您也可以先報名活動，日後再註冊帳號，<br>
+            系統會在認證您的Email後，協助您找回舊的訂單。
+          </p>
+          <a href="login.html" class="btn btn-primary text-secondary fw-5 base-font-family py-2 px-8">
+            立即成為會員
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <main>
+    <div class="container">
+      <div class="pt-6 pb-12 py-xl-15">
+        <div class="row flex-column">
+          <div class="col-md-6 mx-auto">
+            
+            <!-- 進度條 -->
+            <ol class="order-list mb-6 mb-xl-12 position-relative d-flex justify-content-between align-items-center">
+              <li class="d-flex flex-column align-items-center">
+                <p class="order-num mb-1 border border-1 d-flex flex-column bg-primary text-secondary align-items-center justify-content-center">1</p>
+                <p class="fw-bold">訂單確認</p>
+              </li>
+              <li class="d-flex flex-column align-items-center">
+                <p class="order-num mb-1 border border-1 d-flex flex-column bg-background align-items-center justify-content-center">2</p>
+                <p class="fw-bold">結帳付款</p>
+              </li>
+              <li class="d-flex flex-column align-items-center">
+                <p class="order-num mb-1 border border-1 d-flex flex-column bg-background align-items-center justify-content-center">3</p>
+                <p class="fw-bold">訂購結果</p>
+              </li>
+            </ol>
+
+            <!-- 購票資訊 -->
+            <div class="mb-6 mb-xl-12">
+              <h2 class="mb-6 mb-xl-8 text-xl-center fs-8 fs-xl-12 fw-700">返老還童-制服聯誼</h2>
+              <table class="table border-top border-2">
+                <tbody class="order-table">
+                  <tr>
+                    <td class="fw-700">日期</td>
+                    <td class="text-end base-font-family">2023/5/12</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-700">票種</td>
+                    <td class="text-end base-font-family">改頭換面票（含大改造）</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-700">票價</td>
+                    <td class="text-end base-font-family">$8000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- 聯絡人表單 -->
+            <div class="d-flex flex-column align-items-center">
+              <svg width="32" height="32" class="mb-4" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M68.9062 35C68.9062 35 66.0188 35.5469 60.6047 36.0938C55.1906 36.6406 47.2609 37.1875 37.1875 37.1875C37.1875 57.3344 35 68.9062 35 68.9062C35 68.9062 34.4531 66.0188 33.9062 60.6047C33.3594 55.1906 32.8125 47.2609 32.8125 37.1875C12.6656 37.1875 1.09375 35 1.09375 35C1.09375 35 3.98125 34.4531 9.39531 33.9062C14.8094 33.3594 22.7391 32.8125 32.8125 32.8125C32.8125 12.6656 35 1.09375 35 1.09375C35 1.09375 37.1875 12.6656 37.1875 32.8125C57.3344 32.8125 68.9062 35 68.9062 35Z"
+                  fill="#030303" />
+                <path d="M37.1875 30.625C43.75 21.875 50.3125 19.6875 50.3125 19.6875C47.493 24.6897 43.7868 29.1372 39.375 32.8125" fill="#030303" />
+                <path d="M30.625 32.8125C21.875 26.25 19.6875 19.6875 19.6875 19.6875C24.6897 22.507 29.1372 26.2132 32.8125 30.625" fill="#030303" />
+                <path d="M32.8125 39.375C26.25 48.125 19.6875 50.3125 19.6875 50.3125C22.507 45.3103 26.2132 40.8628 30.625 37.1875" fill="#030303" />
+                <path d="M39.375 37.1875C48.125 43.75 50.3125 50.3125 50.3125 50.3125C45.3103 47.493 40.8628 43.7868 37.1875 39.375" fill="#030303" />
+                <path d="M35 40.4688C38.0203 40.4688 40.4688 38.0203 40.4688 35C40.4688 31.9797 38.0203 29.5312 35 29.5312C31.9797 29.5312 29.5312 31.9797 29.5312 35C29.5312 38.0203 31.9797 40.4688 35 40.4688Z" fill="#030303" />
+              </svg>
+              <h3 class="mb-4 fs-6 fw-700">聯絡人資料</h3>
+
+              <form class="w-100 d-flex flex-column base-font-family">
+                <div class="mb-4">
+                  <label for="userName" class="mb-2">聯絡人姓名</label>
+                  <input type="text" class="form-control mb-1 border-2 py-2 px-4 fs-5" id="userName" placeholder="請輸入聯絡人名稱">
+                </div>
+                <div class="mb-4">
+                  <label for="userEmail" class="mb-2">Email</label>
+                  <input type="email" class="form-control mb-1 border-2 py-2 px-4 fs-5" id="userEmail" placeholder="請輸入Email">
+                </div>
+                <div class="mb-8">
+                  <label for="userTel" class="mb-2">手機</label>
+                  <input type="tel" class="form-control mb-1 border-2 py-2 px-4 fs-5" id="userTel" placeholder="請輸入手機號碼">
+                </div>
+
+                <div class="row">
+                  <div class="col-md-8 mx-auto">
+                    <a href="order-pay.html" class="w-100 btn btn-primary mb-6 mb-xl-8 py-2 d-flex justify-content-center align-items-center base-font-family fs-5" type="submit">確認表單資料
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M15.768 9.43999L11.704 5.37599C11.394 5.06599 10.892 5.06599 10.582 5.37599L10.232 5.72599C9.92201 6.03599 9.92201 6.53799 10.232 6.84799L12.826 9.44199C12.982 9.59799 13.058 9.79999 13.058 10.002C13.058 10.204 12.98 10.408 12.826 10.562L10.232 13.156C9.92201 13.466 9.92201 13.968 10.232 14.278L10.582 14.628C10.892 14.934 11.394 14.934 11.704 14.624L15.768 10.56C15.924 10.404 16 10.202 16 9.99999C16 9.79799 15.922 9.59399 15.768 9.43999ZM9.76801 9.43999L5.70401 5.37599C5.39401 5.06599 4.89201 5.06599 4.58201 5.37599L4.23201 5.72599C3.92201 6.03599 3.92201 6.53799 4.23201 6.84799L6.82601 9.44199C6.98201 9.59799 7.05801 9.79999 7.05801 10.002C7.05801 10.204 6.98001 10.408 6.82601 10.562L4.23201 13.156C3.92201 13.466 3.92201 13.968 4.23201 14.278L4.58201 14.628C4.89201 14.934 5.39401 14.934 5.70401 14.624L9.76801 10.56C9.92401 10.404 10 10.202 10 9.99999C10 9.79799 9.92201 9.59399 9.76801 9.43999Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                
+                <a href="index.html" class="base-font-family text-gray text-center fs-4h">取消購票</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <footer class="text-center py-6 py-md-8 border-top border-3">
+  © 7TAO七逃. All Rights Reserved
+</footer>
+    
+</body>
+
+</html>
