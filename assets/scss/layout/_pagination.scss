@@ -1,0 +1,12 @@
+.page-link {
+  width: 40px;
+  height: 40px;
+  color: $primary;
+
+  &.active,
+  .active > & {
+    color: $secondary;
+    background-color: $primary;
+    border: 1px solid $primary;
+  }
+}
