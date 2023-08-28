@@ -17,7 +17,7 @@ $('.needs-validation').each(function(index){
 
 
 // swiper
-const swiper = new Swiper(".mySwiper", {
+const runRight = new Swiper(".runRight", {
   allowTouchMove: false,
   slidesPerView: "auto",
   loop: true,
@@ -29,7 +29,7 @@ const swiper = new Swiper(".mySwiper", {
   centeredSlides: true,
 });
 
-const reverseSwiper = new Swiper(".reverseSwiper", {
+const runLeft = new Swiper(".runLeft", {
   allowTouchMove: false,
   slidesPerView: "auto",
   loop: true,

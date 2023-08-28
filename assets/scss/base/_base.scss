@@ -17,6 +17,10 @@ img{
 a{
   text-decoration: none;
   color: $primary;
+
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 ul,ol{

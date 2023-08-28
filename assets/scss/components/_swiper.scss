@@ -1,0 +1,16 @@
+.swiper {
+  &-wrapper {
+    transition-timing-function: linear;
+  }
+
+  &-slide {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 3.2px;
+    width: auto;
+    color: $secondary;
+    background: $primary;
+  }
+}

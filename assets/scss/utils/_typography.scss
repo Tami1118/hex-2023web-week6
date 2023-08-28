@@ -1,0 +1,44 @@
+.heading-font-family{
+  font-family: $heading-font-family;
+}
+
+.display-font-family{
+  font-family: $display-font-family;
+}
+
+.base-font-family{
+  font-family: $base-font-family;
+}
+
+@for $i from 1 to 25 {
+  .fs-#{$i}{
+    font-size: $i * 4px;
+  }
+}
+
+@for $i from 1 to 50 {
+  .fs-#{$i}h{
+    font-size: $i * 4px + 2px;
+  }
+}
+
+@each $breakpoint, $width in $grid-breakpoints {
+  @media (min-width: $width){
+    @for $i from 1 to 25 {
+      .fs-#{$breakpoint}-#{$i}{
+        font-size: $i * 4px !important; // 不知道是不是因為 bootstrap 預設個關係，必須要加 important 才能覆蓋
+      }
+    }
+
+    @for $i from 1 to 50 {
+      .fs-#{$breakpoint}-#{$i}h{
+        font-size: $i * 4px + 2px;
+      }
+    }
+  }
+}
+
+.letter-spacing-3{
+  letter-spacing: 3px;
+  word-spacing: 3px;
+}

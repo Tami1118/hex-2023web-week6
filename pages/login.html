@@ -10,13 +10,11 @@
 
   <%- include('./layout/header'); -%>
 
-    <main class="vh-xl-100 pt-20 pt-xl-24">
+    <main class="pt-20 pt-lg-24">
       <div class="container">
-        <div class="pt-6 pb-12 py-xl-15">
-
+        <div class="pt-6 pb-12 py-lg-15">
           <div class="row">
-            <div class="col-xl-4 mx-auto">
-              <!-- 標題 -->
+            <div class="col-lg-4 mx-auto">
               <div class="pb-4 d-flex flex-column align-items-center">
                 <svg width="32" height="32" class="mb-4" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -28,10 +26,8 @@
                   <path d="M39.375 37.1875C48.125 43.75 50.3125 50.3125 50.3125 50.3125C45.3103 47.493 40.8628 43.7868 37.1875 39.375" fill="#030303" />
                   <path d="M35 40.4688C38.0203 40.4688 40.4688 38.0203 40.4688 35C40.4688 31.9797 38.0203 29.5312 35 29.5312C31.9797 29.5312 29.5312 31.9797 29.5312 35C29.5312 38.0203 31.9797 40.4688 35 40.4688Z" fill="#030303" />
                 </svg>
-                <h3 class="fs-xl-6 fw-700">會員登入</h3>
+                <h3 class="fs-lg-6 fw-700">會員登入</h3>
               </div>
-
-              <!-- 登入表單 -->
               <form class="d-flex flex-column needs-validation" novalidate>
                 <div class="mb-4">
                   <label for="account" class="form-label">帳號</label>
@@ -40,7 +36,7 @@
                     請輸入帳號
                   </span>
                 </div>
-                <div class="mb-6 mb-xl-8">
+                <div class="mb-6 mb-lg-8">
                   <label for="password" class="form-label">密碼</label>
                   <input type="password" class="form-control border-2 base-font-family fs-5" id="account" placeholder="請輸入密碼" required>
                   <span class="invalid-feedback">
@@ -61,7 +57,9 @@
       </div>
     </main>
 
-    <%- include('./layout/footer'); -%>
+    <div class="position-absolute bottom-0 start-0 end-0 m-auto">
+      <%- include('./layout/footer'); -%>
+    </div>
 
       <script type="module" src="../main.js"></script>
 </body>

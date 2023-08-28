@@ -1,0 +1,46 @@
+.btn-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $primary;
+  font-family: $base-font-family;
+  color: white;
+  
+  &:hover{
+    background: $primary;
+    color: $secondary;
+
+    path{
+      fill: $secondary;
+    }
+  }
+}
+
+.btn-tag{
+  border: 1px solid $primary;
+  border-left: 4px solid $primary;
+  padding: 4px 24px;
+  position: relative;
+  
+  &::before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    top: -1px;
+    bottom: -1px;
+    left: -4px;
+    margin: auto;
+    display: none;
+    background-color: $secondary;
+    z-index: 1;
+  }
+
+  &:hover{
+    background-color: $primary;
+    color: white;
+
+    &::before{
+      display: block;
+    }
+  }
+}

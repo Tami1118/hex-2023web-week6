@@ -3,22 +3,22 @@
 
 <head>
   <%- include('./layout/meta'); -%>
-  <title>7 TAO 活動訂票網</title>
+    <title>7 TAO 活動訂票網</title>
 </head>
 
 <body>
   <%- include('./layout/header'); -%>
 
-    <main class="pt-20 pt-xl-24">
+    <main class="pt-20 pt-lg-24">
+
       <section class="banner">
         <div class="container">
-          <div class="overflow-hidden position-relative">
-            <img class="banner-img" src="../assets/images/banner.jpg" alt="7 TAO Party">
-            <div class="position-absolute top-0 bottom-0 right-0 left-0 w-100 text-white d-flex flex-column">
-              <h2 class="my-4 mx-10 m-xl-12 fs-8 fs-xl-15">19 MAY <br class="d-sm-none"> 2023</h2>
+          <div class="bg-center banner-img" style="background-image: url('../assets/images/banner.jpg')">
+            <div class="h-100 pt-4 pt-lg-12 pb-6 px-10 px-lg-12 d-flex flex-column text-white">
+              <p class="fs-8 fs-lg-15">19 MAY <br class="d-sm-none"> 2023</p>
               <div class="mt-auto mx-auto text-center">
-                <p class="mb-6 mb-xl-4 fs-4h fs-xl-6 fw-700">隔牆有耳-沒有草東的派對</p>
-                <p class="mb-6 d-none d-xl-block">
+                <p class="mb-xl-4 fs-4h fs-lg-6 fw-700">隔牆有耳-沒有草東的派對</p>
+                <p class="d-none d-lg-block base-font-family lh-base">
                   你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！<br>
                   帶上啤酒、野餐墊，讓我們在Live House外面一起開場「沒有草東的派對」吧！
                 </p>
@@ -33,7 +33,7 @@
           <ul class="row row-cols-3 row-cols-lg-6 g-3 g-xl-6">
             <li class="col">
               <!-- a 撐高 -->
-              <a class="h-100 d-flex flex-column justify-content-center align-items-center">
+              <a href="#" class="h-100 d-flex flex-column justify-content-center align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
                   <g clip-path="url(#clip0_11_2030)">
                     <path
@@ -61,7 +61,7 @@
               </a>
             </li>
             <li class="col">
-              <a class="h-100 d-flex flex-column justify-content-center align-items-center">
+              <a href="#" class="h-100 d-flex flex-column justify-content-center align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M66.6667 19.1556C67.3004 19.2148 67.8893 19.5085 68.3179 19.9792C68.7466 20.4498 68.9842 21.0634 68.9842 21.7C68.9842 22.3366 68.7466 22.9502 68.3179 23.4208C67.8893 23.8914 67.3004 24.1851 66.6667 24.2444C66.3125 24.2776 65.9554 24.2364 65.6181 24.1236C65.2808 24.0108 64.9707 23.8288 64.7078 23.5893C64.4448 23.3498 64.2348 23.0581 64.091 22.7328C63.9473 22.4074 63.873 22.0557 63.873 21.7C63.873 21.3443 63.9473 20.9926 64.091 20.6672C64.2348 20.3419 64.4448 20.0502 64.7078 19.8107C64.9707 19.5712 65.2808 19.3892 65.6181 19.2764C65.9554 19.1636 66.3125 19.1224 66.6667 19.1556Z"
@@ -86,7 +86,7 @@
               </a>
             </li>
             <li class="col">
-              <a class="h-100 d-flex flex-column justify-content-center align-items-center">
+              <a href="#" class="h-100 d-flex flex-column justify-content-center align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
                   <path d="M27.5587 17.0109C28.8532 17.0109 29.9025 15.9616 29.9025 14.6672C29.9025 13.3728 28.8532 12.3234 27.5587 12.3234C26.2643 12.3234 25.215 13.3728 25.215 14.6672C25.215 15.9616 26.2643 17.0109 27.5587 17.0109Z" fill="black" />
                   <path
@@ -101,7 +101,7 @@
               </a>
             </li>
             <li class="col">
-              <a class="h-100 d-flex flex-column justify-content-center align-items-center">
+              <a href="#" class="h-100 d-flex flex-column justify-content-center align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
                   <path d="M30.7672 48.877H22.4609C19.8761 48.877 17.7734 50.9796 17.7734 53.5645V68.3466C17.7734 73.2214 21.7389 77.1875 26.6138 77.1875C31.4887 77.1875 35.4547 73.2214 35.4547 68.3466V53.5645C35.4547 50.9796 33.352 48.877 30.7672 48.877Z" fill="black" />
                   <path d="M62.1362 48.877H53.8293C51.2445 48.877 49.1418 50.9796 49.1418 53.5645V68.3466C49.1418 73.2214 53.1079 77.1875 57.9828 77.1875C62.8577 77.1875 66.8237 73.2214 66.8237 68.3466V53.5645C66.8237 50.9796 64.7211 48.877 62.1362 48.877Z" fill="black" />
@@ -116,7 +116,7 @@
               </a>
             </li>
             <li class="col">
-              <a class="h-100 d-flex flex-column justify-content-center align-items-center">
+              <a href="#" class="h-100 d-flex flex-column justify-content-center align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
                   <g clip-path="url(#clip0_14_2253)">
                     <path
@@ -133,33 +133,31 @@
               </a>
             </li>
             <li class="col">
-              <a class="bg-primary h-100 d-flex flex-column justify-content-center align-items-center">
-                <p class="fs-4 fs-xl-12 fw-700 text-secondary">探索 <br> 更多</p>
-              </a>
+              <a href="event.html" class="h-100 border border-primary d-flex justify-content-center align-items-center bg-primary text-secondary fs-4 fs-xl-12 fw-700">探索 <br> 更多</a>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="active">
+      <section class="event">
         <div class="container">
-          <div class="mb-6 mb-xl-8 border border-3 py-4 px-6 d-flex justify-content-between align-items-center">
-            <h2 class="fs-6 fs-xl-16">RESENT</h2>
-            <p class="fs-xl-8 fw-700">近期活動</p>
+          <div class="mb-6 mb-lg-8 border border-3 py-4 px-6 d-flex justify-content-between align-items-center">
+            <h2 class="fs-6 fs-lg-16">RESENT</h2>
+            <p class="fs-lg-8 fw-700">近期活動</p>
           </div>
 
           <ul class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-6">
             <li class="col">
               <div class="h-100 d-flex flex-column position-relative" data-aos="fade-up">
-                <p class="mb-2 mb-xl-3 border-bottom border-3 fs-8 fs-xl-12">19 MAY 2023</p>
-                <img src="../assets/images/event-01.jpg" class="active-img img-fluid mb-2 mb-xl-3" alt="邪典電影派對——房間">
-                <h3 class="mb-2 mb-xl-3 fs-4h fs-xl-6 fw-700">邪典電影派對——房間</h3>
+                <p class="mb-2 mb-lg-3 border-bottom border-3 fs-8 fs-lg-12">12 Sep. 2023</p>
+                <img src="../assets/images/event-01.jpg" class="event-img object-fit-cover mb-2 mb-lg-3" alt="邪典電影派對——房間">
+                <h3 class="mb-2 mb-lg-3 fs-4h fs-lg-6 fw-700">邪典電影派對——房間</h3>
                 <p class="mb-4 base-font-family lh-base text-justify">你有聽說過「大災難家」裡面的主角 Tommy Wiseau 製作的「史上最爛的電影」——房間嗎？在美國甚至演變成一種邪教、一種派對的形式，...</p>
-                <div class="mt-auto border-top border-bottom border-3 py-2 py-xl-3 d-flex justify-content-between">
+                <div class="mt-auto border-top border-bottom border-3 py-2 py-lg-3 d-flex justify-content-between">
                   <a href="#" class="fw-700 d-flex align-items-center">
                     <img class="me-1" src="../assets/images/sparkler.png" width="20" height="20" alt="Sparkler button">社群活動
                   </a>
-                  <a href="event-detail.html" class="base-font-family fw-700 d-flex align-items-center">開賣中
+                  <a href="event-detail.html" class="event-link event-link base-font-family fw-700 d-flex align-items-center">開賣中
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M12.6144 7.55195L9.36318 4.30075C9.11518 4.05275 8.71358 4.05275 8.46558 4.30075L8.18558 4.58075C7.93758 4.82875 7.93758 5.23035 8.18558 5.47835L10.2608 7.55355C10.3856 7.67835 10.4464 7.83995 10.4464 8.00155C10.4464 8.16315 10.384 8.32635 10.2608 8.44955L8.18558 10.5247C7.93758 10.7727 7.93758 11.1743 8.18558 11.4223L8.46558 11.7023C8.71358 11.9471 9.11518 11.9471 9.36318 11.6991L12.6144 8.44795C12.7392 8.32315 12.8 8.16155 12.8 7.99995C12.8 7.83835 12.7376 7.67515 12.6144 7.55195ZM7.81438 7.55195L4.56318 4.30075C4.31518 4.05275 3.91358 4.05275 3.66558 4.30075L3.38558 4.58075C3.13758 4.82875 3.13758 5.23035 3.38558 5.47835L5.46078 7.55355C5.58558 7.67835 5.64638 7.83995 5.64638 8.00155C5.64638 8.16315 5.58398 8.32635 5.46078 8.44955L3.38558 10.5247C3.13758 10.7727 3.13758 11.1743 3.38558 11.4223L3.66558 11.7023C3.91358 11.9471 4.31518 11.9471 4.56318 11.6991L7.81438 8.44795C7.93918 8.32315 7.99998 8.16155 7.99998 7.99995C7.99998 7.83835 7.93758 7.67515 7.81438 7.55195Z"
@@ -171,15 +169,15 @@
             </li>
             <li class="col">
               <div class="h-100 d-flex flex-column position-relative" data-aos="fade-up">
-                <p class="mb-2 mb-xl-3 border-bottom border-3 fs-8 fs-xl-12">23 MAY 2023</p>
-                <img src="../assets/images/event-02.jpg" class="active-img img-fluid mb-2 mb-xl-3" alt="怪舞俱樂部">
-                <h3 class="mb-2 mb-xl-3 fs-4h fs-xl-6 fw-700">怪舞俱樂部</h3>
+                <p class="mb-2 mb-lg-3 border-bottom border-3 fs-8 fs-lg-12">11 Sep. 2023</p>
+                <img src="../assets/images/event-02.jpg" class="event-img object-fit-cover mb-2 mb-lg-3" alt="怪舞俱樂部">
+                <h3 class="mb-2 mb-lg-3 fs-4h fs-lg-6 fw-700">怪舞俱樂部</h3>
                 <p class="mb-4 base-font-family lh-base text-justify">覺得自己的舞蹈細胞異於常人？每次隨著音樂起舞身邊的人總是露出無法理解的表情？來這裡就對了！來參加這場一起跳舞的聚會，也會在每一次的舞會中選出舞步最怪的...</p>
-                <div class="mt-auto border-top border-bottom border-3 py-2 py-xl-3 d-flex justify-content-between">
+                <div class="mt-auto border-top border-bottom border-3 py-2 py-lg-3 d-flex justify-content-between">
                   <a href="#" class="fw-700 d-flex align-items-center">
                     <img class="me-1" src="../assets/images/sparkler.png" width="20" height="20" alt="Sparkler button">演出
                   </a>
-                  <a href="event-detail.html" class="base-font-family fw-700 d-flex align-items-center">檢視活動
+                  <a href="event-detail.html" class="event-link base-font-family fw-700 d-flex align-items-center">檢視活動
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M12.6144 7.55195L9.36318 4.30075C9.11518 4.05275 8.71358 4.05275 8.46558 4.30075L8.18558 4.58075C7.93758 4.82875 7.93758 5.23035 8.18558 5.47835L10.2608 7.55355C10.3856 7.67835 10.4464 7.83995 10.4464 8.00155C10.4464 8.16315 10.384 8.32635 10.2608 8.44955L8.18558 10.5247C7.93758 10.7727 7.93758 11.1743 8.18558 11.4223L8.46558 11.7023C8.71358 11.9471 9.11518 11.9471 9.36318 11.6991L12.6144 8.44795C12.7392 8.32315 12.8 8.16155 12.8 7.99995C12.8 7.83835 12.7376 7.67515 12.6144 7.55195ZM7.81438 7.55195L4.56318 4.30075C4.31518 4.05275 3.91358 4.05275 3.66558 4.30075L3.38558 4.58075C3.13758 4.82875 3.13758 5.23035 3.38558 5.47835L5.46078 7.55355C5.58558 7.67835 5.64638 7.83995 5.64638 8.00155C5.64638 8.16315 5.58398 8.32635 5.46078 8.44955L3.38558 10.5247C3.13758 10.7727 3.13758 11.1743 3.38558 11.4223L3.66558 11.7023C3.91358 11.9471 4.31518 11.9471 4.56318 11.6991L7.81438 8.44795C7.93918 8.32315 7.99998 8.16155 7.99998 7.99995C7.99998 7.83835 7.93758 7.67515 7.81438 7.55195Z"
@@ -191,15 +189,15 @@
             </li>
             <li class="col">
               <div class="h-100 d-flex flex-column position-relative" data-aos="fade-up">
-                <p class="mb-2 mb-xl-3 border-bottom border-3 fs-8 fs-xl-12">30 MAY 2023</p>
-                <img src="../assets/images/event-03.jpg" class="active-img img-fluid mb-2 mb-xl-3" alt="哈利波特馬拉松">
-                <h3 class="mb-2 mb-xl-3 fs-4h fs-xl-6 fw-700">哈利波特馬拉松</h3>
+                <p class="mb-2 mb-lg-3 border-bottom border-3 fs-8 fs-lg-12">12 Aug. 2023</p>
+                <img src="../assets/images/event-03.jpg" class="event-img object-fit-cover mb-2 mb-lg-3" alt="哈利波特馬拉松">
+                <h3 class="mb-2 mb-lg-3 fs-4h fs-lg-6 fw-700">哈利波特馬拉松</h3>
                 <p class="mb-4 base-font-family lh-base text-justify">每次身邊有人開啟哈利波特的話題，自己永遠都是聽不懂的那個麻瓜？看大家在討論魁地奇、用咒語鬥法的時候，自己永遠是陪笑的那個人？穿好你的法袍、帶上你的法杖...</p>
-                <div class="mt-auto border-top border-bottom border-3 py-2 py-xl-3 d-flex justify-content-between">
+                <div class="mt-auto border-top border-bottom border-3 py-2 py-lg-3 d-flex justify-content-between">
                   <a href="#" class="fw-700 d-flex align-items-center">
                     <img class="me-1" src="../assets/images/sparkler.png" width="20" height="20" alt="Sparkler button">聯誼
                   </a>
-                  <a href="event-detail.html" class="base-font-family fw-700 d-flex align-items-center">開賣中
+                  <a href="event-detail.html" class="event-link base-font-family fw-700 d-flex align-items-center">開賣中
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M12.6144 7.55195L9.36318 4.30075C9.11518 4.05275 8.71358 4.05275 8.46558 4.30075L8.18558 4.58075C7.93758 4.82875 7.93758 5.23035 8.18558 5.47835L10.2608 7.55355C10.3856 7.67835 10.4464 7.83995 10.4464 8.00155C10.4464 8.16315 10.384 8.32635 10.2608 8.44955L8.18558 10.5247C7.93758 10.7727 7.93758 11.1743 8.18558 11.4223L8.46558 11.7023C8.71358 11.9471 9.11518 11.9471 9.36318 11.6991L12.6144 8.44795C12.7392 8.32315 12.8 8.16155 12.8 7.99995C12.8 7.83835 12.7376 7.67515 12.6144 7.55195ZM7.81438 7.55195L4.56318 4.30075C4.31518 4.05275 3.91358 4.05275 3.66558 4.30075L3.38558 4.58075C3.13758 4.82875 3.13758 5.23035 3.38558 5.47835L5.46078 7.55355C5.58558 7.67835 5.64638 7.83995 5.64638 8.00155C5.64638 8.16315 5.58398 8.32635 5.46078 8.44955L3.38558 10.5247C3.13758 10.7727 3.13758 11.1743 3.38558 11.4223L3.66558 11.7023C3.91358 11.9471 4.31518 11.9471 4.56318 11.6991L7.81438 8.44795C7.93918 8.32315 7.99998 8.16155 7.99998 7.99995C7.99998 7.83835 7.93758 7.67515 7.81438 7.55195Z"
@@ -211,15 +209,15 @@
             </li>
             <li class="col">
               <div class="h-100 d-flex flex-column position-relative" data-aos="fade-up">
-                <p class="mb-2 mb-xl-3 border-bottom border-3 fs-8 fs-xl-12">12 June 2023</p>
-                <img src="../assets/images/event-04.jpg" class="active-img img-fluid mb-2 mb-xl-3" alt="皮卡丘排球大賽">
-                <h3 class="mb-2 mb-xl-3 fs-4h fs-xl-6 fw-700">皮卡丘排球大賽</h3>
+                <p class="mb-2 mb-lg-3 border-bottom border-3 fs-8 fs-lg-12">11 Aug. 2023</p>
+                <img src="../assets/images/event-04.jpg" class="event-img object-fit-cover mb-2 mb-lg-3" alt="皮卡丘排球大賽">
+                <h3 class="mb-2 mb-lg-3 fs-4h fs-lg-6 fw-700">皮卡丘排球大賽</h3>
                 <p class="mb-4 base-font-family lh-base text-justify">還記得小時候玩的小遊戲嗎？總是有朋友吹噓自己獨孤求敗、只求一敗？是時候該展現真正的實力了！本活動採用瑞士制賽程，以絕對公平的方式進行，是時候該證明自己...</p>
-                <div class="mt-auto border-top border-bottom border-3 py-2 py-xl-3 d-flex justify-content-between">
+                <div class="mt-auto border-top border-bottom border-3 py-2 py-lg-3 d-flex justify-content-between">
                   <a href="#" class="fw-700 d-flex align-items-center">
                     <img class="me-1" src="../assets/images/sparkler.png" width="20" height="20" alt="Sparkler button">遊戲競賽
                   </a>
-                  <a href="event-detail.html" class="base-font-family fw-700 d-flex align-items-center">開賣中
+                  <a href="event-detail.html" class="event-link base-font-family fw-700 d-flex align-items-center">開賣中
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M12.6144 7.55195L9.36318 4.30075C9.11518 4.05275 8.71358 4.05275 8.46558 4.30075L8.18558 4.58075C7.93758 4.82875 7.93758 5.23035 8.18558 5.47835L10.2608 7.55355C10.3856 7.67835 10.4464 7.83995 10.4464 8.00155C10.4464 8.16315 10.384 8.32635 10.2608 8.44955L8.18558 10.5247C7.93758 10.7727 7.93758 11.1743 8.18558 11.4223L8.46558 11.7023C8.71358 11.9471 9.11518 11.9471 9.36318 11.6991L12.6144 8.44795C12.7392 8.32315 12.8 8.16155 12.8 7.99995C12.8 7.83835 12.7376 7.67515 12.6144 7.55195ZM7.81438 7.55195L4.56318 4.30075C4.31518 4.05275 3.91358 4.05275 3.66558 4.30075L3.38558 4.58075C3.13758 4.82875 3.13758 5.23035 3.38558 5.47835L5.46078 7.55355C5.58558 7.67835 5.64638 7.83995 5.64638 8.00155C5.64638 8.16315 5.58398 8.32635 5.46078 8.44955L3.38558 10.5247C3.13758 10.7727 3.13758 11.1743 3.38558 11.4223L3.66558 11.7023C3.91358 11.9471 4.31518 11.9471 4.56318 11.6991L7.81438 8.44795C7.93918 8.32315 7.99998 8.16155 7.99998 7.99995C7.99998 7.83835 7.93758 7.67515 7.81438 7.55195Z"
@@ -231,15 +229,15 @@
             </li>
             <li class="col">
               <div class="h-100 d-flex flex-column position-relative" data-aos="fade-up">
-                <p class="mb-2 mb-xl-3 border-bottom border-3 fs-8 fs-xl-12">25 June 2023</p>
-                <img src="../assets/images/event-05.jpg" class="active-img img-fluid mb-2 mb-xl-3" alt="酒精路跑">
-                <h3 class="mb-2 mb-xl-3 fs-4h fs-xl-6 fw-700">酒精路跑</h3>
+                <p class="mb-2 mb-lg-3 border-bottom border-3 fs-8 fs-lg-12">12 Jul. 2023</p>
+                <img src="../assets/images/event-05.jpg" class="event-img img-fluid object-fit-cover mb-2 mb-lg-3" alt="酒精路跑">
+                <h3 class="mb-2 mb-lg-3 fs-4h fs-lg-6 fw-700">酒精路跑</h3>
                 <p class="mb-4 base-font-family lh-base text-justify">身邊總是有對自己酒量有高度自信的朋友嗎？拉著他/她一起來參加酒精路跑吧！一起拍下第一杯直到倒下為止的照片，一起喝遍市區內各家極具品味的酒吧。</p>
-                <div class="mt-auto border-top border-bottom border-3 py-2 py-xl-3 d-flex justify-content-between">
+                <div class="mt-auto border-top border-bottom border-3 py-2 py-lg-3 d-flex justify-content-between">
                   <a href="#" class="fw-700 d-flex align-items-center">
                     <img class="me-1" src="../assets/images/sparkler.png" width="20" height="20" alt="Sparkler button">社群活動
                   </a>
-                  <a href="event-detail.html" class="base-font-family fw-700 d-flex align-items-center">開賣中
+                  <a href="event-detail.html" class="event-link base-font-family fw-700 d-flex align-items-center">開賣中
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M12.6144 7.55195L9.36318 4.30075C9.11518 4.05275 8.71358 4.05275 8.46558 4.30075L8.18558 4.58075C7.93758 4.82875 7.93758 5.23035 8.18558 5.47835L10.2608 7.55355C10.3856 7.67835 10.4464 7.83995 10.4464 8.00155C10.4464 8.16315 10.384 8.32635 10.2608 8.44955L8.18558 10.5247C7.93758 10.7727 7.93758 11.1743 8.18558 11.4223L8.46558 11.7023C8.71358 11.9471 9.11518 11.9471 9.36318 11.6991L12.6144 8.44795C12.7392 8.32315 12.8 8.16155 12.8 7.99995C12.8 7.83835 12.7376 7.67515 12.6144 7.55195ZM7.81438 7.55195L4.56318 4.30075C4.31518 4.05275 3.91358 4.05275 3.66558 4.30075L3.38558 4.58075C3.13758 4.82875 3.13758 5.23035 3.38558 5.47835L5.46078 7.55355C5.58558 7.67835 5.64638 7.83995 5.64638 8.00155C5.64638 8.16315 5.58398 8.32635 5.46078 8.44955L3.38558 10.5247C3.13758 10.7727 3.13758 11.1743 3.38558 11.4223L3.66558 11.7023C3.91358 11.9471 4.31518 11.9471 4.56318 11.6991L7.81438 8.44795C7.93918 8.32315 7.99998 8.16155 7.99998 7.99995C7.99998 7.83835 7.93758 7.67515 7.81438 7.55195Z"
@@ -251,15 +249,15 @@
             </li>
             <li class="col">
               <div class="h-100 d-flex flex-column position-relative" data-aos="fade-up">
-                <p class="mb-2 mb-xl-3 border-bottom border-3 fs-8 fs-xl-12">9 July 2023</p>
-                <img src="../assets/images/event-06.jpg" class="active-img img-fluid mb-2 mb-xl-3" alt="展覽——我的房間">
-                <h3 class="mb-2 mb-xl-3 fs-4h fs-xl-6 fw-700">展覽——我的房間</h3>
+                <p class="mb-2 mb-lg-3 border-bottom border-3 fs-8 fs-lg-12">11 Jul. 2023</p>
+                <img src="../assets/images/event-06.jpg" class="event-img object-fit-cover mb-2 mb-lg-3" alt="展覽——我的房間">
+                <h3 class="mb-2 mb-lg-3 fs-4h fs-lg-6 fw-700">展覽——我的房間</h3>
                 <p class="mb-4 base-font-family lh-base text-justify">每個人的房間總會有那麼一兩個能代表自己的物事，或許是再平凡不過的牙刷、馬克杯，或許有那些別人的房間從沒出現過的小東西——那些能定義自己的特別的東西。</p>
-                <div class="mt-auto border-top border-bottom border-3 py-2 py-xl-3 d-flex justify-content-between">
+                <div class="mt-auto border-top border-bottom border-3 py-2 py-lg-3 d-flex justify-content-between">
                   <a href="#" class="fw-700 d-flex align-items-center">
                     <img class="me-1" src="../assets/images/sparkler.png" width="20" height="20" alt="Sparkler button">展覽
                   </a>
-                  <a href="event-detail.html" class="base-font-family fw-700 d-flex align-items-center">開賣中
+                  <a href="event-detail.html" class="event-link base-font-family fw-700 d-flex align-items-center">開賣中
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M12.6144 7.55195L9.36318 4.30075C9.11518 4.05275 8.71358 4.05275 8.46558 4.30075L8.18558 4.58075C7.93758 4.82875 7.93758 5.23035 8.18558 5.47835L10.2608 7.55355C10.3856 7.67835 10.4464 7.83995 10.4464 8.00155C10.4464 8.16315 10.384 8.32635 10.2608 8.44955L8.18558 10.5247C7.93758 10.7727 7.93758 11.1743 8.18558 11.4223L8.46558 11.7023C8.71358 11.9471 9.11518 11.9471 9.36318 11.6991L12.6144 8.44795C12.7392 8.32315 12.8 8.16155 12.8 7.99995C12.8 7.83835 12.7376 7.67515 12.6144 7.55195ZM7.81438 7.55195L4.56318 4.30075C4.31518 4.05275 3.91358 4.05275 3.66558 4.30075L3.38558 4.58075C3.13758 4.82875 3.13758 5.23035 3.38558 5.47835L5.46078 7.55355C5.58558 7.67835 5.64638 7.83995 5.64638 8.00155C5.64638 8.16315 5.58398 8.32635 5.46078 8.44955L3.38558 10.5247C3.13758 10.7727 3.13758 11.1743 3.38558 11.4223L3.66558 11.7023C3.91358 11.9471 4.31518 11.9471 4.56318 11.6991L7.81438 8.44795C7.93918 8.32315 7.99998 8.16155 7.99998 7.99995C7.99998 7.83835 7.93758 7.67515 7.81438 7.55195Z"
@@ -275,24 +273,24 @@
 
       <section class="online">
         <div class="container">
-          <div class="border border-3 py-4 px-6 d-flex justify-content-between align-items-center mb-6 mb-xl-8">
-            <h2 class="fs-6 fs-xl-16">Online</h2>
-            <p class="fs-xl-8 fw-700">線上活動</p>
+          <div class="border border-3 py-4 px-6 d-flex justify-content-between align-items-center mb-6 mb-lg-8">
+            <h2 class="fs-6 fs-lg-16">Online</h2>
+            <p class="fs-lg-8 fw-700">線上活動</p>
           </div>
 
           <div class="row" data-aos="fade-up">
-            <div class="col-xl-7">
-              <img class="online-img mb-3 mb-xl-0" src="../assets/images/online.jpg" alt="">
+            <div class="col-lg-7">
+              <img class="online-img w-100 object-fit-cover mb-3 mb-lg-0" src="../assets/images/online.jpg" alt="切特居批踢">
             </div>
-            <div class="col-xl-5">
+            <div class="col-lg-5">
               <div class="h-100 d-flex flex-column">
-                <h3 class="mb-2 mb-xl-4 fs-4h fs-xl-8 fw-700">切特居批踢</h3>
+                <h3 class="mb-2 mb-lg-4 fs-4h fs-lg-8 fw-700">切特居批踢</h3>
                 <div>
-                  <button class="btn btn-tag">競賽</button>
-                  <button class="btn btn-tag">科技</button>
-                  <button class="btn btn-tag">有趣</button>
+                  <a class="btn-tag">競賽</a>
+                  <a class="btn-tag">科技</a>
+                  <a class="btn-tag">有趣</a>
                 </div>
-                <p class="mt-3 mt-xl-8 base-font-family lh-base text-justify">最近網路上很流行的AI程式ChatGPT，可以用來聊天或是查詢、整理各種資料，不同的應用方式如雨後春筍般冒出來。<br>
+                <p class="mt-3 mt-lg-8 base-font-family lh-base text-justify">最近網路上很流行的AI程式ChatGPT，可以用來聊天或是查詢、整理各種資料，不同的應用方式如雨後春筍般冒出來。<br>
                   這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。<br>
                   該讓其他人知道自己使用ChatGPT的姿勢才是最特別的那個了！
                 </p>
@@ -311,8 +309,7 @@
       </section>
 
       <section class="albums">
-        <!-- swiper -->
-        <div class="swiper mySwiper">
+        <div data-aos="fade-up" class="swiper runRight bg-primary">
           <div class="swiper-wrapper">
             <div class="swiper-slide text-nowrap">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
             <div class="swiper-slide text-nowrap">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
@@ -320,43 +317,41 @@
           </div>
         </div>
 
-
-        <div class="container py-12 py-md-15">
-          <ul class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-6 justify-content-center">
+        <div class="container py-12 py-lg-15">
+          <ul data-aos="fade-up" class="row row-cols-1 row-cols-lg-2 row-cols-xl-4 g-6 justify-content-center">
             <li class="col-10">
               <div class="position-relative border border-2 p-4 pb-12">
                 <h2 class="px-4 py-2 bg-white position-absolute top-0 start-50 fs-4">社群活動</h2>
-                <img src="../assets/images/album-01.jpg" class="albums-img img-fluid mb-3" alt="無聲派對-閉閉嘴dancing">
+                <img data-aos="zoom-in" data-aos-delay="100" src="../assets/images/album-01.jpg" class="albums-img w-100 object-fit-cover mb-3" alt="無聲派對-閉閉嘴dancing">
                 <div class="fs-4h fw-700">無聲派對-閉閉嘴dancing</div>
               </div>
             </li>
             <li class="col-10">
               <div class="position-relative border border-2 p-4 pb-12">
                 <h2 class="px-4 py-2 bg-white position-absolute top-0 start-50 fs-4">藝文活動</h2>
-                <img src="../assets/images/album-02.jpg" class="albums-img img-fluid mb-3" alt="拯救老店大作戰">
+                <img data-aos="zoom-in" data-aos-delay="100" src="../assets/images/album-02.jpg" class="albums-img w-100 object-fit-cover mb-3" alt="拯救老店大作戰">
                 <div class="fs-4h fw-700">拯救老店大作戰</div>
               </div>
             </li>
             <li class="col-10">
               <div class="position-relative border border-2 p-4 pb-12">
                 <h2 class="px-4 py-2 bg-white position-absolute top-0 start-50 fs-4">自我察覺</h2>
-                <img src="../assets/images/album-03.jpg" class="albums-img img-fluid mb-3" alt="內觀修行-部落篇">
+                <img data-aos="zoom-in" data-aos-delay="100" src="../assets/images/album-03.jpg" class="albums-img w-100 object-fit-cover mb-3" alt="內觀修行-部落篇">
                 <div class="fs-4h fw-700">內觀修行-部落篇</div>
               </div>
             </li>
             <li class="col-10">
               <div class="position-relative border border-2 p-4 pb-12">
                 <h2 class="px-4 py-2 bg-white position-absolute top-0 start-50 fs-4">聯誼活動</h2>
-                <img src="../assets/images/album-04.jpg" class="albums-img img-fluid mb-3" alt="賞櫻野餐">
+                <img data-aos="zoom-in" data-aos-delay="100" src="../assets/images/album-04.jpg" class="albums-img w-100 object-fit-cover mb-3" alt="賞櫻野餐">
                 <div class="fs-4h fw-700">賞櫻野餐</div>
               </div>
             </li>
           </ul>
         </div>
 
-
-        <div class="swiper reverseSwiper">
-          <div class="swiper-wrapper">
+        <div data-aos="fade-up" class="swiper runLeft">
+          <div class="swiper-wrapper bg-primary">
             <div class="swiper-slide text-nowrap">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
             <div class="swiper-slide text-nowrap">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
             <div class="swiper-slide text-nowrap">活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・</div>
@@ -366,36 +361,36 @@
 
       <section class="contact">
         <div class="container">
-          <div class="d-xl-flex">
-            <div class="w-100 mb-6 mb-xl-0 border border-2">
-              <div class="border-bottom border-2 py-4 px-3 px-md-8 display-font-family fw-700 fs-6 fs-xl-8">
+          <div class="d-lg-flex">
+            <div class="w-100 mb-6 mb-lg-0 border border-2">
+              <div class="border-bottom border-2 py-4 px-3 px-md-8 display-font-family fs-6 fs-lg-8 fw-700">
                 #FOLLOW US
               </div>
               <div class="py-4 px-3 px-md-8">
-                <p class="mb-4 mb-xl-10 base-font-family lh-base">想第一時間獲得新奇有趣的活動資訊？<br>
+                <p class="mb-4 mb-lg-10 base-font-family lh-base">想第一時間獲得新奇有趣的活動資訊？<br>
                   追蹤我們的社群吧！<br>
                   也歡迎你聯繫我們，提供好玩有趣的活動企劃。
                 </p>
                 <ul class="d-flex flex-column gap-4">
-                  <li class="d-flex align-items-center"><span class="me-2"><i class="icofont icofont-ui-email text-white"></i></span> <a href="mailto: 7tao.event@gmail.com">7tao.event@gmail.com</a></li>
-                  <li class="d-flex align-items-center"><span class="me-2"><i class="icofont icofont-phone text-white"></i></span> <a href="tel: 09123123123">09123123123</a></li>
-                  <li class="d-flex align-items-center"><span class="me-2"><i class="icofont icofont-facebook text-white"></i></span> <a href="#">7TAO七逃</a></li>
+                  <li class="d-flex align-items-center"><span class="me-2 d-flex align-items-center justify-content-center bg-primary" style="width: 32px; height: 32px"><i class="icofont icofont-ui-email text-white"></i></span> <a href="mailto: 7tao.event@gmail.com">7tao.event@gmail.com</a></li>
+                  <li class="d-flex align-items-center"><span class="me-2 d-flex align-items-center justify-content-center bg-primary" style="width: 32px; height: 32px"><i class="icofont icofont-phone text-white"></i></span> <a href="tel: 09123123123">09123123123</a></li>
+                  <li class="d-flex align-items-center"><span class="me-2 d-flex align-items-center justify-content-center bg-primary" style="width: 32px; height: 32px"><i class="icofont icofont-facebook text-white"></i></span> <a href="#">7TAO七逃</a></li>
                 </ul>
               </div>
             </div>
-            <div class="w-100 border-start-xl-0">
+            <div class="w-100 border border-2 border-start-lg-0">
               <div class="h-100 d-flex flex-column">
-                <div class="border-bottom border-2 py-4 px-3 px-md-8 display-font-family fw-700 fs-6 fs-xl-8">
+                <div class="border-bottom border-2 py-4 px-3 px-md-8 display-font-family fs-6 fs-lg-8 fw-700">
                   #SUBSCRIBE US
                 </div>
                 <div class="py-4 px-3 px-md-8 mb-auto">
-                  <p class="mb-4 mb-xl-10 base-font-family lh-base">訂閱電子報送折價券！<br>
+                  <p class="mb-4 mb-lg-10 base-font-family lh-base">訂閱電子報送折價券！<br>
                     定期精選文章資訊及最新優惠資訊，<br>
                     還不通通給我訂閱起來？
                   </p>
                   <input type="email" class="form-control base-font-family" placeholder="輸入Email">
                 </div>
-                <a href="#" class="btn w-100 btn-main">
+                <a href="#" class="btn btn-main w-100">
                   確認訂閱
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path
@@ -409,26 +404,16 @@
         </div>
       </section>
 
-      <div class="border-top border-3 py-12 py-xl-15 text-center display-font-family fw-700">
-        <p class="mb-3 mb-xl-4 fs-4h fs-xl-8">此刻打盹，你將做夢；此刻學習，你將圓夢</p>
-        <p class="fs-3h fs-xl-4h">——我也不知道誰說的</p>
+      <div class="border-top border-3 py-12 py-lg-15 text-center display-font-family fw-700">
+        <p class="mb-3 mb-lg-4 fs-4h fs-lg-8">此刻打盹，你將做夢；此刻學習，你將圓夢</p>
+        <p class="fs-3h fs-lg-4h">——我也不知道誰說的</p>
       </div>
-
-      <!-- 
-    <section class="...">
-      <div class="container">
-        <div class="border border-3 py-4 px-6 d-flex justify-content-between align-items-center mb-6 mb-xl-8">
-          <h2 class="fs-6 fs-xl-16"></h2>
-          <p class="fs-xl-8 fw-700"></p>
-        </div>
-      </div>
-    </section> -->
 
     </main>
 
     <%- include('./layout/footer'); -%>
-    
-    <script type="module" src="../main.js"></script>
+
+      <script type="module" src="../main.js"></script>
 </body>
 
 </html>

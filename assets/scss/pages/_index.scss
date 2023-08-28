@@ -1,15 +1,3 @@
-.banner {
-  &-img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-
-    @include media-breakpoint-up(xl) {
-      height: 518px;
-    }
-  }
-}
-
 .category {
   li {
     aspect-ratio: 1/1;
@@ -21,12 +9,13 @@
 
     &:hover {
       a {
-        color: $danger;
-        border: 2px solid $danger;
+        color: $white;
+        background-color: $hover;
+        border: 2px solid $hover;
       }
 
       path {
-        fill: $danger;
+        fill: $white;
       }
     }
   }
@@ -46,25 +35,28 @@
   }
 }
 
-.active {
-  a {
-    &:hover {
-      color: $hover;
+.event-link {
+  position: relative;
 
-      path {
-        fill: $hover;
-      }
+  &:hover {
+    &::before {
+      display: block;
     }
   }
 
-  &-img {
-    width: 100%;
-    height: 210px;
-    object-fit: cover;
-
-    @include media-breakpoint-up(xl) {
-      height: 255px;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px;
+    margin: auto;
+    display: none;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background-color: #FBFF22;
+    z-index: -1;
   }
 }
 
@@ -81,106 +73,19 @@
     &:nth-child(3) {
       transform: rotate(-2deg);
     }
-  }
 
-  &-img {
-    width: 100%;
-    height: 267px;
-    object-fit: cover;
-
-    @include media-breakpoint-up(xl) {
-      height: 274px;
+    &:hover{
+      animation-name: shake;
+      animation-duration: .3s;
+      animation-timing-function: ease;
     }
   }
-}
 
-.online {
-  &-img {
-    width: 100%;
-    height: 158px;
-    object-fit: cover;
-    object-position: 50% 30%;
-
-    @include media-breakpoint-up(xl) {
-      height: 317px;
-    }
+  @keyframes shake{
+    0%{transform: rotate(3deg);}
+    25%{transform: rotate(-3deg);}
+    50%{transform: rotate(3deg);}
+    75%{transform: rotate(-3deg);}
+    100%{transform: rotate(3deg);}
   }
 }
-
-.contact {
-  span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    background-color: $primary;
-  }
-}
-
-.border-start-xl-0 {
-  border-width: 2px;
-  border-color: $primary;
-  border-style: solid;
-  
-  @include media-breakpoint-up(xl) {
-    border-width: 2px 2px 2px 0;
-  }
-}
-
-.swiper{
-  background-color: #000;
-}
-.swiper-wrapper {
-  transition-timing-function: linear;
-}
-.swiper-slide {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  font-size: 32px;
-  font-weight: 500;
-  letter-spacing: 3.2px;
-  width: auto;
-  color: #FBFF22;
-  background: #000;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

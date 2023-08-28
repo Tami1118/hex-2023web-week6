@@ -1,16 +1,4 @@
-.event_banner{
-  img{
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-
-    @include media-breakpoint-up(xl){
-      height: 550px;
-    }
-  }
-}
-
-.event-time::after{
+.event-time::after {
   content: "";
   position: absolute;
   top: 0;

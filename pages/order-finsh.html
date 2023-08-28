@@ -9,74 +9,72 @@
 <body>
   <%- include('./layout/header'); -%>
 
-  <main class="vh-xl-auto pt-20 pt-xl-24">
-    <div class="container">
-      <div class="pt-6 pb-12 py-xl-15">
-        <div class="row flex-column">
-          <div class="col-md-6 mx-auto">
-
-            <!-- 進度條 -->
-            <ol class="order-list mb-6 mb-xl-12 position-relative d-flex justify-content-between align-items-center">
-              <li class="d-flex flex-column align-items-center">
-                <p class="order-num mb-1 border border-1 bg-primary d-flex flex-column align-items-center justify-content-center">
-                  <i class="icofont icofont-verification-check text-secondary"></i>
-                </p>
-                <p class="fw-bold">訂單確認</p>
-              </li>
-              <li class="d-flex flex-column align-items-center">
-                <p class="order-num mb-1 border border-1 bg-primary d-flex flex-column align-items-center justify-content-center">
-                  <i class="icofont icofont-verification-check text-secondary"></i>
-                </p>
-                <p class="fw-bold">結帳付款</p>
-              </li>
-              <li class="d-flex flex-column align-items-center">
-                <p class="order-num mb-1 border border-1 bg-primary text-secondary d-flex flex-column align-items-center justify-content-center">3</p>
-                <p class="fw-bold">訂購結果</p>
-              </li>
-            </ol>
-
-            <!-- 訂購資訊 -->
-            <div class="pb-8 d-flex flex-column align-items-center">
-              <i class="icofont icofont-check-circled mb-4 fs-8"></i>
-              <h3 class="fs-6 fs-xl-8 fw-700">訂購成功</h3>
+    <main class="pt-20 pt-lg-24">
+      <div class="container">
+        <div class="pt-6 pb-12 py-lg-15">
+          <div class="row flex-column">
+            <div class="col-md-6 mx-auto">
+              <ol class="order-list mb-6 mb-lg-12 position-relative d-flex justify-content-between align-items-center">
+                <li class="d-flex flex-column align-items-center">
+                  <p class="order-num mb-1 border border-1 bg-primary d-flex flex-column align-items-center justify-content-center">
+                    <i class="icofont icofont-verification-check text-secondary"></i>
+                  </p>
+                  <p class="fw-bold">訂單確認</p>
+                </li>
+                <li class="d-flex flex-column align-items-center">
+                  <p class="order-num mb-1 border border-1 bg-primary d-flex flex-column align-items-center justify-content-center">
+                    <i class="icofont icofont-verification-check text-secondary"></i>
+                  </p>
+                  <p class="fw-bold">結帳付款</p>
+                </li>
+                <li class="d-flex flex-column align-items-center">
+                  <p class="order-num mb-1 border border-1 bg-primary text-secondary d-flex flex-column align-items-center justify-content-center">3</p>
+                  <p class="fw-bold">訂購結果</p>
+                </li>
+              </ol>
+              
+              <div class="pb-8 d-flex flex-column align-items-center">
+                <i class="icofont icofont-check-circled mb-4 fs-8"></i>
+                <h3 class="fs-6 fs-lg-8 fw-700">訂購成功</h3>
+              </div>
+              <table class="table mb-4 border-top border-2">
+                <tbody class="order-table">
+                  <tr>
+                    <td class="fw-700">訂單編號</td>
+                    <td class="text-end base-font-family">892746123</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-700">訂購時間</td>
+                    <td class="text-end base-font-family">2023/04/28 14:30</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-700">票券</td>
+                    <td class="text-end base-font-family">改頭換面票（含大改造）$8000</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-700">取票序號</td>
+                    <td class="text-end base-font-family text-danger fw-700">95G54J4434</td>
+                  </tr>
+                  <tr>
+                    <td class="fw-700">取票號碼</td>
+                    <td class="text-end base-font-family text-danger fw-700">04597101</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="base-font-family text-gray lh-base">
+                請至 7-Eleven 完成取票，請於 ibon 點選【購票/取票/訂房】>【售票系統】>【取票】>【拓元售票系統】。<br>
+                若您未前往取票，本筆交易仍視為完成，不可取消訂單。<br>
+                若需退票，請按照退票辦法進行申請。
+              </p>
             </div>
-            <table class="table mb-4 border-top border-2">
-              <tbody class="order-table">
-                <tr>
-                  <td class="fw-700">訂單編號</td>
-                  <td class="text-end base-font-family">892746123</td>
-                </tr>
-                <tr>
-                  <td class="fw-700">訂購時間</td>
-                  <td class="text-end base-font-family">2023/04/28 14:30</td>
-                </tr>
-                <tr>
-                  <td class="fw-700">票券</td>
-                  <td class="text-end base-font-family">改頭換面票（含大改造）$8000</td>
-                </tr>
-                <tr>
-                  <td class="fw-700">取票序號</td>
-                  <td class="text-end base-font-family text-danger fw-700">95G54J4434</td>
-                </tr>
-                <tr>
-                  <td class="fw-700">取票號碼</td>
-                  <td class="text-end base-font-family text-danger fw-700">04597101</td>
-                </tr>
-              </tbody>
-            </table>
-            <p class="base-font-family text-gray lh-base">
-              請至 7-Eleven 完成取票，請於 ibon 點選【購票/取票/訂房】>【售票系統】>【取票】>【拓元售票系統】。<br>
-              若您未前往取票，本筆交易仍視為完成，不可取消訂單。<br>
-              若需退票，請按照退票辦法進行申請。
-            </p>
           </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <%- include('./layout/footer'); -%>
-  <script type="module" src="../main.js"></script>
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
 </body>
 
 </html>

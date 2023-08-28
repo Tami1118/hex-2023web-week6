@@ -1,0 +1,48 @@
+.bg-center {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-img {
+  height: 350px;
+
+  @include media-breakpoint-up(lg) {
+    height: 518px;
+  }
+}
+
+.event-img {
+  height: 210px;
+
+  @include media-breakpoint-up(lg) {
+    height: 255px;
+  }
+}
+
+.event-banner {
+  height: 180px;
+
+  @include media-breakpoint-up(lg) {
+    height: 550px;
+  }
+}
+
+.online-img {
+  height: 158px;
+  object-position: 50% 30%;
+
+  @include media-breakpoint-up(lg) {
+    height: 317px;
+  }
+}
+
+.albums-img {
+  height: 267px;
+
+  @include media-breakpoint-up(lg) {
+    height: 274px;
+  }
+}
+
+
