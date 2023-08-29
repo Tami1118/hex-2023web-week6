@@ -1,19 +1,11 @@
 import '/assets/scss/all.scss';
 import './node_modules/bootstrap/dist/js/bootstrap.min';
-// import './node_modules/jquery/dist/jquery.min.js';
 import Swiper from 'swiper/bundle';
 import 'swiper/css';
 import AOS from 'aos';
 import './node_modules/aos/dist/aos.css';
-
-
-// jquery - validation
-// $('.needs-validation').each(function(index) {
-//   $(this).on('submit', function(e) {
-//     e.preventDefault();
-//     $(this).addClass('was-validated');
-//   });
-// });
+import jQuery from 'jquery';
+window.$ = jQuery;
 
 
 // swiper
@@ -45,3 +37,12 @@ const runLeft = new Swiper(".runLeft", {
 
 // AOS
 AOS.init();
+
+
+// jquery
+$('.needs-validation').each(function(index) {
+  $(this).on('submit', function(e) {
+    e.preventDefault();
+    $(this).addClass('was-validated');
+  });
+});
